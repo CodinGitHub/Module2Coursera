@@ -37,3 +37,18 @@ article{
 #sushi{
     background-color: sandybrown;
 }
+@media (min-width: 768px) and (max-width: 991px){
+    #main-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #article-sushi{
+        grid-column: 1/-1;
+    }
+}
+@media (min-width: 992px){
+    #main-container{
+        display: flex;
+        flex-direction: row;
+    }
+}
